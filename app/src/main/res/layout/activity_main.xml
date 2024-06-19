@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/prefetchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="top|center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Prefetch"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/showBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="top|center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:enabled="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:saveEnabled="false"
+                android:text="Show"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/ad_linear_container"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="visible" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/destroyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFFFFF"
+            android:text="destroySharedInstance" />
+
+    </LinearLayout>
+
+</RelativeLayout>

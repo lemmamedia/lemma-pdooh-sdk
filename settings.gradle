@@ -1,0 +1,3 @@
+include ':lemmasdk'
+rootProject.name='LemmaSampleApp'
+include ':app'
