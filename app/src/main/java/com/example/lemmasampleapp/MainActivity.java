@@ -105,9 +105,9 @@ public class MainActivity extends Activity {
 
     private void prefetchAd() {
         final LMWSharedVideoManager sharedVideoManager = LMWSharedVideoManager.getInstance();
-        LMWAdRequest adRequest = new LMWAdRequest("169", "66682");
+        LMWAdRequest adRequest = new LMWAdRequest("169", "10910");
         LMWConfig config = new LMWConfig();
-        adRequest.setAdServerBaseURL("https://sandbox.lemmatechnologies.com/lemma/servad");
+        adRequest.setAdServerBaseURL("https://dooh.lemmamedia.com/lemma/servad");
         config.setExecuteImpressionInWebContainer(true);
         config.setSecureConnection(true);
         sharedVideoManager.setRetryCount(2);
